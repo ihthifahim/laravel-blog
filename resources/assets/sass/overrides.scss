@@ -1,0 +1,78 @@
+body {
+    background-color: whitesmoke !important;
+}
+
+
+
+
+
+
+
+/*
+===============================================
+======= Text Overrides ========================
+==============================================
+
+*/
+.is-muted{
+    color: $grey-light !important;
+}
+
+a.is-muted:hover{
+    color: $grey !important;
+}
+
+
+.dropdown{
+    position: relative;
+
+    
+
+    .dropdown-menu{
+        display: none;
+        position: absolute;
+        left:0;
+        top: 100%;
+        z-index:1000;
+        background-color: white;
+        min-width: 200px;
+        text-align:left;
+        box-shadow: 0 0 1px rgba(57,70,78,.15),0 20px 55px -8px rgba(57,70,78,.25);
+
+        li{
+            &.seperator{
+                border-top: 1px solid #ccc;
+                margin:5px 0;
+            }
+
+            &>a{
+                margin: 5px 0px ;
+                display: block;
+                padding: 5px 0px 5px 10px;
+            
+                &:hover{
+                    background-color: wihtesmoke;
+                }
+            }
+        }
+
+    }
+
+    &.is-aligned-right .dropdown-menu{
+        right:0px;
+        left: auto;
+    }
+
+    &.is-open .dropdown-menu{
+    display: block;
+    }
+
+}
+
+.navbar{
+    height:4.5rem;
+}
+
+.navbar-item img{
+    max-height:2.8rem;
+}

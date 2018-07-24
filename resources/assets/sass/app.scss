@@ -13,3 +13,8 @@
 
 //buefy vue components
 @import "node_modules/buefy/src/scss/buefy";
+
+//custom sass pages
+@import "overrides";
+@import "helpers";
+@import "styles";
