@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Ihthi Blog</title>
+    <title>Ihthi Blog - Manager</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,15 +21,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-           
-      @include('_includes.nav.main');
-      
-      @yield('content');
+    
+    @include('_includes.nav.main')
+    
+    @include('_includes.nav.manage')
 
-
-                  
-     
+    <div class="management-area" id="app">
+    @yield('content')
+    @yield('scripts')
     </div>
 </body>
 </html>

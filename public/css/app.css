@@ -414,7 +414,7 @@ th {
 }
 
 html {
-  /* background-color: white; */
+  background-color: white;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -17546,6 +17546,19 @@ body {
   background-color: whitesmoke !important;
 }
 
+html {
+  background-color: whitesmoke !important;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  color: #2e2e2e;
+  height: 1px;
+}
+
 /*
 ===============================================
 ======= Text Overrides ========================
@@ -17992,5 +18005,23 @@ a.is-muted:hover {
 
 .p-r-100 {
   padding-right: 100px !important;
+}
+
+.side-menu {
+  position: fixed;
+  height: 100vh;
+  width: 200px;
+  background-color: white;
+}
+
+.management-area {
+  position: absolute;
+  top: 4em;
+  left: 200px;
+  right: 0;
+}
+
+.flex-container {
+  margin: 10px 25px;
 }
 
